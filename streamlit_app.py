@@ -19,16 +19,19 @@ with col1:
     pulses = st.select_slider(
         "Pulses",
         options=[0, 33, 50, 100],
+        key='pulses'
     )
     
     alt = st.select_slider(
         "Alt meat",
         options=[0, 33, 50, 100],
+        key='alt'
     )
     
     chicken = st.select_slider(
         "Chicken",
         options=[0, 33, 50, 100],
+        key='chicken'
     )
 
     st.write(f"Total beef and dairy reduction: {pulses+alt+chicken}%")
