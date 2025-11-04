@@ -20,14 +20,15 @@ def get_fridge_data(pulses, alt, chicken, df):
         row = filtered_df.iloc[0]
         result = {
             'fridge top door': row['fridge top door'],
+            'fridge top middle': row['fridge top middle'],
             'fridge top left': row['fridge top left'],
-            'fridge top right': row['fridge top right'],
             'fridge middle left': row['fridge middle left'],
-            'fridge middle right': row['fridge middle right'],
-            'fridge bottom left': row['fridge bottom left'],
             'fridge bottom right': row['fridge bottom right'],
-            'countertop': row['countertop'],
+            'fridge middle right': row['fridge middle right'],
+
             'cupboard left': row['cupboard left'],
+            'fridge top right': row['fridge top right'],
+            'countertop': row['Countertop'],
         }
 
     return result
