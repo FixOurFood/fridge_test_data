@@ -22,6 +22,7 @@ def get_fridge_data(pulses, alt, chicken, df):
             'fridge top door': row['fridge top door'],
             'fridge top middle': row['fridge top middle'],
             'fridge top left': row['fridge top left'],
+
             'fridge middle left': row['fridge middle left'],
             'fridge bottom right': row['fridge bottom right'],
             'fridge middle right': row['fridge middle right'],
@@ -40,7 +41,7 @@ def fill_fridge(fridge_dict):
     with cols[0]:
         st.write(fridge_dict.get('fridge top left', 'No data'))
         st.write(fridge_dict.get('fridge middle left', 'No data'))
-        st.write(fridge_dict.get('fridge bottom left', 'No data'))
+        st.write(fridge_dict.get('fridge top middle', 'No data'))
 
     with cols[1]:
         st.write(fridge_dict.get('fridge top right', 'No data'))
