@@ -8,12 +8,12 @@ col1, col2 = st.columns([1,2])
 # First column with sliders
 with col1:
 
-    if st.button("Reset sliders"):
+    if st.button("Reset all sliders"):
         st.session_state['pulses'] = 0
         st.session_state['alt'] = 0
         st.session_state['chicken'] = 0
 
-    if st.button("Clear data cache"):
+    if st.button("Clear remote data cache"):
         get_fridge_csv.clear()
 
     pulses = st.select_slider(
