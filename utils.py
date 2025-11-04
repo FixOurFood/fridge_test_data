@@ -18,7 +18,8 @@ def get_fridge_data(pulses, alt, chicken, df):
     result = {}
 
     if not filtered_df.empty:
-        row = filtered_df.iloc[0]
+        row = filtered_df.iloc[0].copy()
+        row = row.fillna("-")
         result = {
             'fridge top door': row['fridge top door'],
             'fridge top middle': row['fridge top middle'],
